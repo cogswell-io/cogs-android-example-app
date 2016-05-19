@@ -128,7 +128,7 @@ public class RegistrationIntentService extends IntentService {
         Uri defaultSoundUri = RingtoneManager
                 .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(
-                this).setSmallIcon(R.drawable.ic_launcher)
+                this).setSmallIcon(R.drawable.ic_action_name)
                 .setContentTitle("Cogs App").setContentText(msg)
                 .setAutoCancel(true).setSound(defaultSoundUri)
                 .setContentIntent(pendingIntent);

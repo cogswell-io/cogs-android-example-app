@@ -112,7 +112,7 @@ public class EventActivity extends AppCompatActivity  {
                     activity.runOnUiThread(new Runnable() {
                         public void run() {
                             if (!responseMessage.equals("") && responseMessage != null && !responseMessage.isEmpty()) {
-                                String prettyResponseMessage = responseMessage;
+                                String prettyResponseMessage = responseMessage.replaceAll("\\\\\"", "\"");
                                 try {
                                     // Attempt to pretty-print the JSON.
                                     JSONObject responseJSON = new JSONObject(responseMessage);
